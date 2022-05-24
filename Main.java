@@ -3,6 +3,7 @@ package com.banjman;
 import java.lang.reflect.Array;
 import java.text.NumberFormat;
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -72,12 +73,48 @@ public class Main {
 //        }else {
 //            System.out.println("You are underage. Age: " + age);
 //        }
-        System.out.print("Name : ");
-        String name = scanner.nextLine().trim(); // chain method to trim white spaces from beginning and end
-        System.out.println("Welcome " + name);
+//        System.out.print("Name : ");
+//        String name = scanner.nextLine().trim(); // chain method to trim white spaces from beginning and end
+//        System.out.println("Welcome " + name);
+
+        //SWITCH STATEMENT
+//        System.out.print("Enter your role :");
+////        String role = scanner.nextLine();
+//        String role = "admin";
+//        switch (role) {
+//            case "admin":
+//                System.out.println("Welcome admin!");
+//                break;
+//            case "moderator":
+//                System.out.println("Welcome moderator!");
+//            default:
+//                System.out.println("You are " + role);
+//        }
+        //FIZZBUZZ
+//        System.out.print("Number: ");
+//        int number = scanner.nextInt();
+        int number = 1;
+        String fizzBuzz =
+                number % 5 == 0 && number % 3 == 0 ? "FizzBuzz" :
+                number % 5 == 0 ? "Fizz" :
+                number % 3 == 0 ? "Buzz" : Integer.toString(number);
+//        System.out.println(fizzBuzz);
+
+        // DO WHILE gets executed at least once
+        String input = "";
+//        do {
+//            System.out.print("Input : ");
+//            input = scanner.next().toLowerCase();
+//            System.out.println(input);
+//        } while (!input.equals("quit"));
+
+        // BREAK stop the loop from running and CONTINUE moves control to the beginning of the loop
+
+        // FOE EACH LOOP
+        String[] fruits = {"apple", "mango", "orange"};
+        for (String fruit : fruits){ // only moves forward and no access to index of each item
+            System.out.println(fruit);
+        }
 
     }
-
-
-
 }
